@@ -1,0 +1,36 @@
+{
+  "name": "mealplanner-app",
+  "version": "0.0.1",
+  "description": "A meal planner app",
+  "main": "index.js",
+  "author": "oengusmacinog (Brian Garland)",
+  "repository": "https://github.com/oengusmacinog/mealplanner-app.git",
+  "license": "MIT",
+  "dependencies": {
+    "history": "^4.7.2",
+    "office-ui-fabric-react": "^5.66.0",
+    "re-base": "^3.2.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "watch": "concurrently --names 'webpack, stylus' --prefix name 'npm run start' 'npm run styles:watch'",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
+    "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css",
+    "deploy": "ns ./build --cmd 'list ./content -s'"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/config/eslint.js"
+  },
+  "devDependencies": {
+    "ajv": "^6.3.0",
+    "autoprefixer-stylus": "^0.14.0",
+    "concurrently": "^3.5.1",
+    "react-scripts": "^1.1.1",
+    "stylus": "^0.54.5"
+  }
+}
