@@ -1,11 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import {
-//   DocumentCard,
-//   DocumentCardPreview,
-//   DocumentCardTitle,
-//   DocumentCardActivity
-// } from 'office-ui-fabric-react/lib/DocumentCard';
 
 class Header extends React.Component {
     render() {
